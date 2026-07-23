@@ -1,0 +1,43 @@
+body {
+    background-color: #dedfbc;
+}
+
+.tableContainer {
+    margin: 5rem auto 0;
+    max-width: 1600px;
+    padding: 2rem;
+    background-color: #c7c7c7;
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 8px;
+}
+
+.statsBtns {
+    max-width: 1600px;
+    margin: 0 auto 2rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.statsBtns .btn-outline-secondary {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+}
+
+.statsBtns .btn-outline-secondary:hover {
+    background-color: #cecdcd;
+}
+
+#tvTable tbody tr.row-red>td {
+    background-color: red;
+    color: #ffffff;
+}
+
+#tvTable tbody tr.row-green>td {
+    background-color: #009e00;
+    color: #ffffff;
+}

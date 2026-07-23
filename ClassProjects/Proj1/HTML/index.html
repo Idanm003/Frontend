@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <title>My First Web Project</title>
+</head>
+
+<body>
+    <header>
+
+        <nav id="navbar">
+            <a class="nav-link" id="navLink" href="./index.html">Home</a>
+            <a class="nav-link" href="./about.html">About Me</a>
+            <a class="nav-link" href="./contact.html">Contact</a>
+        </nav>
+
+        <h1>Hello World!</h1>
+
+    </header>
+
+    <main>
+
+        <section id="intro">
+
+            <h2>This is my first web project!</h2>
+            <p><b>Please</b> don't <u>click</u> on the button bellow!</p>
+            <button id="surprisebtn">Click Me For A Surprise!</button>
+
+        </section>
+
+        <hr />
+
+        <section id="links">
+
+            <h2> Links</h2>
+            <p> Click here to visit my <a class ="link" href="https://github.com/Idanm003" target="_blank">GitHub
+                    Profile</a></p>
+
+        </section>
+
+        <hr />
+
+        <section id="media">
+            <h2>Media</h2>
+            <p>Here is an image I found on the internet that I think is cool</p>
+            <img class="box" src="assets/rickandmorty.jpg" alt="Rick and Morty" width="300" height="300">
+            <p>Here is a video I found on the internet that I think is cool</p>
+            <video class="box" width="400px" controls>
+                <source src="https://v.ftcdn.net/04/39/38/79/700_F_439387925_cQGkDoffFVtlD9pLqXeIzczvu0lLWkNz_ST.mp4"
+                    type="video/mp4">
+            </video>
+        </section>
+
+    </main>
+
+    <hr />
+
+    <footer>
+
+        <p>By Idan Magen. All rights reserved.</p>
+
+    </footer>
+
+    <script src="../JS/script.js"></script>
+    <!-----
+        <script>
+            var surprisebtnClick = 0;
+            document.getElementById("surprisebtn").onclick = function () {
+                surprisebtnClick++;
+                console.log(surprisebtnClick.toString());
+                if (surprisebtnClick < 10) {
+                    alert("Surprise!");
+                }
+                else if (surprisebtnClick >= 10 && surprisebtnClick < 20) {
+                    alert("Okay, that's enough surprises.");
+                }
+                else if (surprisebtnClick >= 20) {
+                    alert("STOP CLICKING THE BUTTON!");
+                    surprisebtnClick = 0;
+                }
+            }
+        </script>
+    ---->
+</body>
+
+</html>

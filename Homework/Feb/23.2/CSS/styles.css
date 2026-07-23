@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.bg-pink {
+    background-color: #ffcdd2;
+}
+
+.bg-purple {
+    background-color: #e1bee7;
+}
+
+.bg-light-red {
+    background-color: #ff4081;
+}
+
+.bg-light-blue {
+    background-color: #bbdefb;
+}
+
+.pink-box {
+    background-color: pink;
+}
+
+.blue-box {
+    background-color: blue;
+}
+
+.green-box {
+    background-color: green;
+}
+
+.yellow-box {
+    background-color: yellow;
+}
+
+.red-box {
+    background-color: red;
+}
+
+.orange-box {
+    background-color: orange;
+}

@@ -1,0 +1,73 @@
+#ex1 {
+    background-color: yellow;
+    font-size: 30px;
+}
+
+.highlight {
+    color: red;
+    font-size: 50px;
+}
+
+#ex2 {
+    text-decoration: none;
+}
+
+.delete {
+    text-decoration: line-through;
+}
+
+#ex3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#ex4 {
+    background-color: #1a5c8c;
+    padding: 30px;
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#frame {
+    background-color: #1a5c8c;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.dogimg {
+    display: block;
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+}
+
+.red {
+    background-color: red;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}

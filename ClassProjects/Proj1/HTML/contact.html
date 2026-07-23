@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Contact - My First Web Project</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a class="nav-link" id="navLink" href="./index.html">Home</a>
+            <a class="nav-link" href="./about.html">About Me</a>
+            <a class="nav-link" href="./contact.html">Contact</a>
+        </nav>
+        <h1>Contact Me</h1>
+    </header>
+
+    <main>
+        <h2>Get in Touch</h2>
+        <form id="contact">
+            <div id="contactinfo">
+                <p>If you have any questions or just want to say hi, feel free to fill out the form below!</p>
+                <div id="name">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required autofocus>
+                </div>
+                <br>
+                <div id="email">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <br>
+                <div id="password">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <br>
+                <div id="confirmPassword">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+
+                </div>
+                <br>
+                <div id="age">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Age" min="0" max="120" required>
+                </div>
+                <br>
+                <div id="role">
+                    <p><strong>Choose Your Role:</strong></p>
+                    <input type="radio" id="student" name="role" value="student" required>
+                    <label for="student">Student</label>
+
+                    <input type="radio" id="teacher" name="role" value="teacher" required>
+                    <label for="teacher">Teacher</label>
+                </div>
+                <br>
+                <div id="interests">
+                    <p><strong>Select Your Interests:</strong></p>
+                    <input type="checkbox" id="HTML" name="topic" value="HTML">
+                    <label for="HTML">HTML</label>
+                    <br>
+                    <input type="checkbox" id="CSS" name="topic" value="CSS">
+                    <label for="CSS">CSS</label>
+                    <br>
+                    <input type="checkbox" id="JavaScript" name="topic" value="JavaScript">
+                    <label for="JavaScript">JavaScript</label>
+                    <br>
+                </div>
+                <br>
+                <div id="level">
+                    <label for="level">Your Level:</label>
+                    <select id="level" name="level" required>
+                        <option value="">Select Level</option>
+                        <option value="option1">Beginner</option>
+                        <option value="option2">Intermediate</option>
+                        <option value="option3">Advanced</option>
+                    </select>
+                </div>
+                <br>
+                <div id="excitement">
+                    <label for="excitement">How excited are you about learning web development? (0-10)</label>
+                    <input type="range" id="excitement" name="excitement" min="0" max="10" value="5" required>
+                </div>
+                <br>
+                <div id="favColor">
+                    <label for="favColor">Favorite Color:</label>
+                    <input type="color" id="favColor" name="favColor" value="#000000">
+                </div>
+                <br>
+                <div id="startdate">
+                    <label for="">Start Date:</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+                <br>
+                <div id="textarea">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message Here" required></textarea>
+                </div>
+                <br>
+                <div id="buttons">
+                    <button type="submit" id="submitBtn">Send Message</button>
+                    <button type="reset" id="resetBtn">Reset Form</button>
+                </div>
+                <br>
+            </div>
+        </form>
+        <footer>
+            <hr />
+            <p>By Idan Magen. All rights reserved. &copy;</p>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function (event) {
+            alert("Form submitted successfully!");
+        });
+        document.getElementById("resetBtn").addEventListener("click", function (event) {
+            alert("Form reset successfully!");
+        });
+    </script>
+
+</body>
+
+</html>

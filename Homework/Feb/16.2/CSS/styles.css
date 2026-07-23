@@ -1,0 +1,224 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.header {
+    grid-column: 1/4;
+    background: linear-gradient(to right, green, cyan);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba (0, 0, 0, 0.5);
+}
+
+.left-sidebar {
+    background: linear-gradient(to bottom, blue, cyan);
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba (0, 0, 0, 0.7);
+}
+
+.main-content {
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    min-height: 300px;
+}
+
+.right-sidebar {
+    background: linear-gradient(to bottom, blue, cyan);
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.footer {
+    grid-column: 1 / 4;
+    background-color: #ff6b4a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.example2 {
+    position: relative;
+    margin: 20px;
+}
+
+.animation-container {
+    position: relative;
+    width: 600px;
+    height: 150px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.sun {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    font-size: 80px;
+    animation: rotate-sun 4s linear infinite;
+}
+
+.cloud {
+    position: absolute;
+    top: 30px;
+    font-size: 80px;
+    animation: move-cloud 6s linear infinite;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 2px solid red;
+    position: relative;
+    margin: 50px auto;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ball1 {
+    background-color: blue;
+    margin-left: 85px;
+    margin-top: 0px;
+    animation: move-vertical 2s infinite;
+}
+
+.ball2 {
+    background-color: green;
+    margin-left: 0px;
+    margin-top: 0px;
+    animation: move-diagonal-right 2s infinite;
+}
+
+.ball3 {
+    background-color: yellow;
+    margin-left: 160px;
+    margin-top: 0px;
+    animation: move-diagonal-left 2s infinite;
+}
+
+@keyframes rotate-sun {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move-cloud {
+    0% {
+        left: 600px;
+    }
+
+    100% {
+        left: 180px;
+    }
+}
+
+@keyframes move-vertical {
+    0% {
+        top: 0px;
+        background-color: blue;
+    }
+
+    25% {
+        background-color: purple;
+    }
+
+    50% {
+        top: 170px;
+        background-color: cyan;
+    }
+
+    75% {
+        background-color: pink;
+    }
+
+    100% {
+        top: 0px;
+        background-color: blue;
+    }
+}
+
+@keyframes move-diagonal-right {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: green;
+    }
+
+    25% {
+        background-color: lime;
+    }
+
+    50% {
+        top: 170px;
+        left: 170px;
+        background-color: darkgreen;
+    }
+
+    75% {
+        background-color: lightgreen;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: green;
+    }
+}
+
+@keyframes move-diagonal-left {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: yellow;
+    }
+
+    25% {
+        background-color: orange;
+    }
+
+    50% {
+        top: 170px;
+        left: -160px;
+        background-color: gold;
+    }
+
+    75% {
+        background-color: lightyellow;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: yellow;
+    }
+}

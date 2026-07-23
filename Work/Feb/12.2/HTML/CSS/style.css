@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.div {
+    font-size: 16rem;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+}
+
+.box-relative {
+    background-color: lightgreen;
+    position: relative;
+    left: 500px;
+}
+
+.box-absolute {
+    height: 100px;
+    width: 100px;
+    background-color: lightyellow;
+    position: absolute;
+    top: 50%;
+}
+
+.box-fixed {
+    background-color: lightblue;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+}
+
+.box-sticky {
+    background-color: lightcoral;
+    position: sticky;
+    top: 20px;
+}
+
+.box-absolute-z1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: lightpink;
+    z-index: 1;
+}
+
+.box-absolute-z2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    z-index: 2;
+}
+
+.box-media {
+    height: 200px;
+    width: 600px;
+    background-color: magenta;
+    margin: 0 auto;
+}
+
+.flex-box {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    height: 100px;
+    width: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+@media (max-width: 680px) {
+    * {
+        font-size: 8px;
+    }
+
+    .box-media {
+        width: 300px;
+        background-color: darkgreen;
+    }
+}

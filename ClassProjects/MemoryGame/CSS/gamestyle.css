@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d48f27 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.game-container {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: clamp(1.2rem, 4vw, 2rem);
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: clamp(14px, 2.5vw, 18px);
+}
+
+.theme-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: clamp(13px, 2vw, 16px);
+    background: #eaa166;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    min-height: 44px;
+}
+
+button:hover {
+    background: #a09557;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.card {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    background: #ccc914;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 3px;
+    display: none;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.card.flip img {
+    display: block;
+}
+
+.winMsg {
+    margin-top: 30px;
+}
+
+.winMsg h2 {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    font-size: clamp(14px, 2.5vw, 18px);
+    margin-top: 20px;
+}
+
+/* Tablet */
+@media (max-width: 480px) {
+    .game-container {
+        padding: 20px 15px;
+    }
+
+    #game-board {
+        gap: 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 360px) {
+    .game-container {
+        padding: 15px 10px;
+    }
+
+    #game-board {
+        gap: 6px;
+    }
+
+    button {
+        padding: 8px 14px;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Tables</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/tvTable.css">
+</head>
+
+<body>
+    <h1 class="text-center page-title mt-5">TV Options</h1>
+    <p class="text-center page-subtitle">Click "Buy" to proceed to the purchase page.</p>
+    <div class="tableContainer">
+        <table class="table table-bordered table-striped table-hover align-middle text-center" id="tvTable">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" id="tvImage">Image</th>
+                    <th scope="col" id="storeName">Store Name</th>
+                    <th scope="col" id="storeAddress">Store Address</th>
+                    <th scope="col" id="storeCity">City</th>
+                    <th scope="col" id="storePrice">Price</th>
+                    <th scope="col" id="storeLink">Link To Product</th>
+                    <th scope="col" id="storeRating">Rating</th>
+                    <th scope="col" id="storeOptions">Options</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="statsBtns align-items-center justify-content-center text-center">
+        <button class="btn btn-outline-secondary btn-sm" onclick="showAverage()">Show average price</button>
+        <button class="btn btn-outline-secondary btn-sm" onclick="showBest()">Show best option</button>
+        <p id="result"></p>
+    </div>
+    <script src="../JS/frontendTest.js"></script>
+</body>
+
+</html>

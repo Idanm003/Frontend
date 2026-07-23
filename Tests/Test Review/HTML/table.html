@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Data Table</title>
+    <link rel="stylesheet" href="../CSS/table.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="table-container container mt-5">
+        <h2 class="text-center">Car Data Table</h2>
+        <table class="table table-secondary table-striped table-bordered text-center" id="mainTable">
+            <thead>
+                <tr>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>KM</th>
+                    <th>Price (USD)</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="carMake">Toyota</td>
+                    <td class="carModel">Camry</td>
+                    <td class="carYear">2022</td>
+                    <td class="carKm">150000</td>
+                    <td class="carPrice">$25,000</td>
+                    <td><button class="btn btn-primary selectCarBtn">Select</button></td>
+                </tr>
+                <tr>
+                    <td class="carMake">Honda</td>
+                    <td class="carModel">Civic</td>
+                    <td class="carYear">2021</td>
+                    <td class="carKm">120000</td>
+                    <td class="carPrice">$22,000</td>
+                    <td><button class="btn btn-primary selectCarBtn">Select</button></td>
+                </tr>
+                <tr>
+                    <td class="carMake">Ford</td>
+                    <td class="carModel">Mustang</td>
+                    <td class="carYear">2023</td>
+                    <td class="carKm">50000</td>
+                    <td class="carPrice">$35,000</td>
+                    <td><button class="btn btn-primary selectCarBtn">Select</button></td>
+                </tr>
+                <tr>
+                    <td class="carMake">Chevrolet</td>
+                    <td class="carModel">Silverado</td>
+                    <td class="carYear">2022</td>
+                    <td class="carKm">100000</td>
+                    <td class="carPrice">$40,000</td>
+                    <td><button class="btn btn-primary selectCarBtn">Select</button></td>
+                </tr>
+                <tr>
+                    <td class="carMake">BMW</td>
+                    <td class="carModel">X5</td>
+                    <td class="carYear">2021</td>
+                    <td class="carKm">80000</td>
+                    <td class="carPrice">$50,000</td>
+                    <td><button class="btn btn-primary selectCarBtn">Select</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-success btn-lg btn-block w-100 mt-3 text-black border-1 border-black" type="button"
+            id="checkoutBtn">Check Out</button>
+        <div class="checkout-container mt-4">
+            <table class="table table-bordered table-warning table-striped text-center mt-3" id="selectedCarTable">
+                <thead>
+                    <tr>
+                        <th>Selected Car</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="orderdTableData"></tbody>
+            </table>
+            <div class="total-price-container mt-3 text-end" id="totalPriceContainer">
+                <h4>Total Price:
+                    <span id="totalPrice">
+                        $0
+                    </span>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/table.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+body {
+    background-color: orange;
+}
+
+.text-container {
+    width: 500px;
+    background: linear-gradient(to bottom, lightblue, lightcyan);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 50px auto;
+}
+
+.floating-emoji {
+    float: right;
+    font-size: 60px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.stair-container {
+    width: 400px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 50px auto;
+    position: relative;
+}
+
+.box1 {
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #87CEEB, #6BA3D4);
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.box2 {
+    position: absolute;
+    width: 220px;
+    height: 75px;
+    top: 75px;
+    left: 0;
+    background: linear-gradient(to bottom, #6BA3D4, #4F7ABD);
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.box3 {
+    position: absolute;
+    width: 320px;
+    height: 75px;
+    top: 150px;
+    left: 0;
+    background: linear-gradient(to bottom, #4F7ABD, #3352A6);
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.box-right {
+    position: absolute;
+    width: 316px;
+    height: 225px;
+    top: 0;
+    left: 80px;
+    background: linear-gradient(to bottom, #87CEEB, #3366CC);
+    border: 2px solid black;
+    z-index: 0;
+}
+
+.box-bottom {
+    position: absolute;
+    width: 396px;
+    height: 75px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #1a334d, #001a4d);
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.space-container {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.galaxy {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jupiter {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 125px;
+    left: 80px;
+}
+
+.earth {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 115px;
+    left: 180px;
+}
+
+.mars {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    bottom: 100px;
+    left: 320px;
+}
+
+.stars-container {
+    width: 600px;
+    height: 250px;
+    background-image: url('../assets/galaxy.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.circle {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.circle1 {
+    width: 40px;
+    height: 40px;
+    top: 40px;
+    right: 100px;
+}
+
+.circle2 {
+    width: 100px;
+    height: 100px;
+    top: 60px;
+    left: 200px;
+}
+
+.circle3 {
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    left: 120px;
+}
+
+.color-container {
+    width: 480px;
+    height: 230px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.yellow-section {
+    background-color: yellow;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.lime-section {
+    background-color: #9ACD32;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.green-section {
+    background-color: darkgreen;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.layout-container {
+    width: 430px;
+    margin: 0 auto;
+    border: 3px solid #4682B4;
+}
+
+.header-layout {
+    background-color: lightblue;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.nav-layout {
+    background-color: #9370DB;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.section-layout {
+    background-color: #9ACD32;
+    padding: 80px 10px;
+    font-size: 12px;
+    margin: 10px;
+    border: 2px solid gray;
+}
+
+.footer-layout {
+    background-color: lightblue;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.grid-container {
+    width: 580px;
+    margin: 0 auto;
+}
+
+.header-grid {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.nav-grid {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 2px;
+}
+
+.box {
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.red-grid {
+    background-color: red;
+}
+
+.yellow-grid {
+    background-color: #FFB800;
+}
+
+.green-grid {
+    background-color: green;
+}
+
+.pink-grid {
+    background-color: #FF1493;
+}
+
+.footer-grid {
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    transition: background-color 0.3s;
+}
+
+@media (min-width: 1400px) {
+    body {
+        background-color: orange;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    body {
+        background-color: orange;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        background-color: red;
+    }
+}
